@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D508182D19093BA900CF08F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D508182C19093BA900CF08F3 /* Foundation.framework */; };
+		D508182F19093BA900CF08F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D508182E19093BA900CF08F3 /* CoreGraphics.framework */; };
+		D508183119093BA900CF08F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D508183019093BA900CF08F3 /* UIKit.framework */; };
+		D508183719093BA900CF08F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D508183519093BA900CF08F3 /* InfoPlist.strings */; };
+		D508183919093BA900CF08F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D508183819093BA900CF08F3 /* main.m */; };
+		D508183D19093BA900CF08F3 /* NBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D508183C19093BA900CF08F3 /* NBAppDelegate.m */; };
+		D508184019093BA900CF08F3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D508183E19093BA900CF08F3 /* Main_iPhone.storyboard */; };
+		D508184319093BA900CF08F3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D508184119093BA900CF08F3 /* Main_iPad.storyboard */; };
+		D508184619093BA900CF08F3 /* NBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D508184519093BA900CF08F3 /* NBViewController.m */; };
+		D508184819093BA900CF08F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D508184719093BA900CF08F3 /* Images.xcassets */; };
+		D508184F19093BA900CF08F3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D508184E19093BA900CF08F3 /* XCTest.framework */; };
+		D508185019093BA900CF08F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D508182C19093BA900CF08F3 /* Foundation.framework */; };
+		D508185119093BA900CF08F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D508183019093BA900CF08F3 /* UIKit.framework */; };
+		D508185919093BA900CF08F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D508185719093BA900CF08F3 /* InfoPlist.strings */; };
+		D508185B19093BA900CF08F3 /* iOS7BatteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D508185A19093BA900CF08F3 /* iOS7BatteryTests.m */; };
+		D508186619093C0600CF08F3 /* NBPLUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D508186519093C0600CF08F3 /* NBPLUtil.m */; };
+		D508186919093CDF00CF08F3 /* NBBatteryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D508186819093CDF00CF08F3 /* NBBatteryTableView.m */; };
+		D508186C19093D0C00CF08F3 /* NBBatteryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D508186B19093D0C00CF08F3 /* NBBatteryTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D508185219093BA900CF08F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D508182119093BA900CF08F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D508182819093BA900CF08F3;
+			remoteInfo = iOS7Battery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D508182919093BA900CF08F3 /* iOS7Battery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS7Battery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D508182C19093BA900CF08F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D508182E19093BA900CF08F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D508183019093BA900CF08F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D508183419093BA900CF08F3 /* iOS7Battery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS7Battery-Info.plist"; sourceTree = "<group>"; };
+		D508183619093BA900CF08F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D508183819093BA900CF08F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D508183A19093BA900CF08F3 /* iOS7Battery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS7Battery-Prefix.pch"; sourceTree = "<group>"; };
+		D508183B19093BA900CF08F3 /* NBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBAppDelegate.h; sourceTree = "<group>"; };
+		D508183C19093BA900CF08F3 /* NBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBAppDelegate.m; sourceTree = "<group>"; };
+		D508183F19093BA900CF08F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D508184219093BA900CF08F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D508184419093BA900CF08F3 /* NBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBViewController.h; sourceTree = "<group>"; };
+		D508184519093BA900CF08F3 /* NBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBViewController.m; sourceTree = "<group>"; };
+		D508184719093BA900CF08F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D508184D19093BA900CF08F3 /* iOS7BatteryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS7BatteryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D508184E19093BA900CF08F3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D508185619093BA900CF08F3 /* iOS7BatteryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS7BatteryTests-Info.plist"; sourceTree = "<group>"; };
+		D508185819093BA900CF08F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D508185A19093BA900CF08F3 /* iOS7BatteryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS7BatteryTests.m; sourceTree = "<group>"; };
+		D508186419093C0600CF08F3 /* NBPLUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPLUtil.h; sourceTree = "<group>"; };
+		D508186519093C0600CF08F3 /* NBPLUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPLUtil.m; sourceTree = "<group>"; };
+		D508186719093CDF00CF08F3 /* NBBatteryTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBBatteryTableView.h; sourceTree = "<group>"; };
+		D508186819093CDF00CF08F3 /* NBBatteryTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBBatteryTableView.m; sourceTree = "<group>"; };
+		D508186A19093D0C00CF08F3 /* NBBatteryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBBatteryTableViewCell.h; sourceTree = "<group>"; };
+		D508186B19093D0C00CF08F3 /* NBBatteryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBBatteryTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D508182619093BA900CF08F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D508182F19093BA900CF08F3 /* CoreGraphics.framework in Frameworks */,
+				D508183119093BA900CF08F3 /* UIKit.framework in Frameworks */,
+				D508182D19093BA900CF08F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D508184A19093BA900CF08F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D508184F19093BA900CF08F3 /* XCTest.framework in Frameworks */,
+				D508185119093BA900CF08F3 /* UIKit.framework in Frameworks */,
+				D508185019093BA900CF08F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D508182019093BA900CF08F3 = {
+			isa = PBXGroup;
+			children = (
+				D508183219093BA900CF08F3 /* iOS7Battery */,
+				D508185419093BA900CF08F3 /* iOS7BatteryTests */,
+				D508182B19093BA900CF08F3 /* Frameworks */,
+				D508182A19093BA900CF08F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D508182A19093BA900CF08F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D508182919093BA900CF08F3 /* iOS7Battery.app */,
+				D508184D19093BA900CF08F3 /* iOS7BatteryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D508182B19093BA900CF08F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D508182C19093BA900CF08F3 /* Foundation.framework */,
+				D508182E19093BA900CF08F3 /* CoreGraphics.framework */,
+				D508183019093BA900CF08F3 /* UIKit.framework */,
+				D508184E19093BA900CF08F3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D508183219093BA900CF08F3 /* iOS7Battery */ = {
+			isa = PBXGroup;
+			children = (
+				D508183B19093BA900CF08F3 /* NBAppDelegate.h */,
+				D508183C19093BA900CF08F3 /* NBAppDelegate.m */,
+				D508186419093C0600CF08F3 /* NBPLUtil.h */,
+				D508186519093C0600CF08F3 /* NBPLUtil.m */,
+				D508183E19093BA900CF08F3 /* Main_iPhone.storyboard */,
+				D508184119093BA900CF08F3 /* Main_iPad.storyboard */,
+				D508184419093BA900CF08F3 /* NBViewController.h */,
+				D508184519093BA900CF08F3 /* NBViewController.m */,
+				D508186719093CDF00CF08F3 /* NBBatteryTableView.h */,
+				D508186819093CDF00CF08F3 /* NBBatteryTableView.m */,
+				D508186A19093D0C00CF08F3 /* NBBatteryTableViewCell.h */,
+				D508186B19093D0C00CF08F3 /* NBBatteryTableViewCell.m */,
+				D508184719093BA900CF08F3 /* Images.xcassets */,
+				D508183319093BA900CF08F3 /* Supporting Files */,
+			);
+			path = iOS7Battery;
+			sourceTree = "<group>";
+		};
+		D508183319093BA900CF08F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D508183419093BA900CF08F3 /* iOS7Battery-Info.plist */,
+				D508183519093BA900CF08F3 /* InfoPlist.strings */,
+				D508183819093BA900CF08F3 /* main.m */,
+				D508183A19093BA900CF08F3 /* iOS7Battery-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D508185419093BA900CF08F3 /* iOS7BatteryTests */ = {
+			isa = PBXGroup;
+			children = (
+				D508185A19093BA900CF08F3 /* iOS7BatteryTests.m */,
+				D508185519093BA900CF08F3 /* Supporting Files */,
+			);
+			path = iOS7BatteryTests;
+			sourceTree = "<group>";
+		};
+		D508185519093BA900CF08F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D508185619093BA900CF08F3 /* iOS7BatteryTests-Info.plist */,
+				D508185719093BA900CF08F3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D508182819093BA900CF08F3 /* iOS7Battery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D508185E19093BA900CF08F3 /* Build configuration list for PBXNativeTarget "iOS7Battery" */;
+			buildPhases = (
+				D508182519093BA900CF08F3 /* Sources */,
+				D508182619093BA900CF08F3 /* Frameworks */,
+				D508182719093BA900CF08F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS7Battery;
+			productName = iOS7Battery;
+			productReference = D508182919093BA900CF08F3 /* iOS7Battery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D508184C19093BA900CF08F3 /* iOS7BatteryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D508186119093BA900CF08F3 /* Build configuration list for PBXNativeTarget "iOS7BatteryTests" */;
+			buildPhases = (
+				D508184919093BA900CF08F3 /* Sources */,
+				D508184A19093BA900CF08F3 /* Frameworks */,
+				D508184B19093BA900CF08F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D508185319093BA900CF08F3 /* PBXTargetDependency */,
+			);
+			name = iOS7BatteryTests;
+			productName = iOS7BatteryTests;
+			productReference = D508184D19093BA900CF08F3 /* iOS7BatteryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D508182119093BA900CF08F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = nailbones;
+				TargetAttributes = {
+					D508184C19093BA900CF08F3 = {
+						TestTargetID = D508182819093BA900CF08F3;
+					};
+				};
+			};
+			buildConfigurationList = D508182419093BA900CF08F3 /* Build configuration list for PBXProject "iOS7Battery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D508182019093BA900CF08F3;
+			productRefGroup = D508182A19093BA900CF08F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D508182819093BA900CF08F3 /* iOS7Battery */,
+				D508184C19093BA900CF08F3 /* iOS7BatteryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D508182719093BA900CF08F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D508184319093BA900CF08F3 /* Main_iPad.storyboard in Resources */,
+				D508184819093BA900CF08F3 /* Images.xcassets in Resources */,
+				D508184019093BA900CF08F3 /* Main_iPhone.storyboard in Resources */,
+				D508183719093BA900CF08F3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D508184B19093BA900CF08F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D508185919093BA900CF08F3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D508182519093BA900CF08F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D508186919093CDF00CF08F3 /* NBBatteryTableView.m in Sources */,
+				D508184619093BA900CF08F3 /* NBViewController.m in Sources */,
+				D508183D19093BA900CF08F3 /* NBAppDelegate.m in Sources */,
+				D508183919093BA900CF08F3 /* main.m in Sources */,
+				D508186619093C0600CF08F3 /* NBPLUtil.m in Sources */,
+				D508186C19093D0C00CF08F3 /* NBBatteryTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D508184919093BA900CF08F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D508185B19093BA900CF08F3 /* iOS7BatteryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D508185319093BA900CF08F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D508182819093BA900CF08F3 /* iOS7Battery */;
+			targetProxy = D508185219093BA900CF08F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D508183519093BA900CF08F3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D508183619093BA900CF08F3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D508183E19093BA900CF08F3 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D508183F19093BA900CF08F3 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D508184119093BA900CF08F3 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D508184219093BA900CF08F3 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D508185719093BA900CF08F3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D508185819093BA900CF08F3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D508185C19093BA900CF08F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D508185D19093BA900CF08F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D508185F19093BA900CF08F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS7Battery/iOS7Battery-Prefix.pch";
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				INFOPLIST_FILE = "iOS7Battery/iOS7Battery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D508186019093BA900CF08F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS7Battery/iOS7Battery-Prefix.pch";
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				INFOPLIST_FILE = "iOS7Battery/iOS7Battery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D508186219093BA900CF08F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS7Battery.app/iOS7Battery";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS7Battery/iOS7Battery-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS7BatteryTests/iOS7BatteryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D508186319093BA900CF08F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS7Battery.app/iOS7Battery";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS7Battery/iOS7Battery-Prefix.pch";
+				INFOPLIST_FILE = "iOS7BatteryTests/iOS7BatteryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D508182419093BA900CF08F3 /* Build configuration list for PBXProject "iOS7Battery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D508185C19093BA900CF08F3 /* Debug */,
+				D508185D19093BA900CF08F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D508185E19093BA900CF08F3 /* Build configuration list for PBXNativeTarget "iOS7Battery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D508185F19093BA900CF08F3 /* Debug */,
+				D508186019093BA900CF08F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D508186119093BA900CF08F3 /* Build configuration list for PBXNativeTarget "iOS7BatteryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D508186219093BA900CF08F3 /* Debug */,
+				D508186319093BA900CF08F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D508182119093BA900CF08F3 /* Project object */;
+}

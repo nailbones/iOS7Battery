@@ -491,6 +491,7 @@
 				D508186019093BA900CF08F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D508186119093BA900CF08F3 /* Build configuration list for PBXNativeTarget "iOS7BatteryTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				D508186319093BA900CF08F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
